@@ -1,58 +1,27 @@
-y<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="fonts.css">
-  <link rel="stylesheet" type="text/css" href="global.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>API</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"> </head>
+<title>SpaceX API Test</title>
+<body class="poppins-regular">
+    <h1>SpaceX Latest Launchpad</h1>
 
-<body>
-  <!-- Heading for the Page -->
-  <header class="header-container">
-    <h1>Lab 5</h1>
-    <h2>App displaying card content using API</h2>
-  </header>
-  <section class="option-1">
-    <div class="option-container">
-      <h2>Option 1</h2>
-      <p>Use a dropdown to change the API endpoint or data</p>
-      <select id="dropdown" class="dropdown"></select>
-      <button id="submit-button" class="button">Submit</button>
-    </div>
-    <div class="container">
-      <ul id="option-1-results" class="card-container"></ul>
-    </div>
-  </section>
-  <section class="option-2">
-    <div class="option-container">
-      <h2>Option 2</h2>
-      <p>Display a list of cards using the API</p>
-    </div>
-    <div class="container">
-      <ul id="option-2-results" class="card-container"></ul>
-    </div>
-  </section>
-  <section class="option-2-enhanced">
-    <div class="option-container">
-      <h2>Option 2 Enhanced</h2>
-      <p>Add a search box to filter the list of cards.</p>
-      <!--Search box to find content on cards-->
-      <div class="box" style="text-align: center;">
-        <input id="searchbar" class="search" type="text" name="search" placeholder="Search..">
+    
+    <div class="card-container" id="launch-info"></div>
+    
+    <p>Choose your Image</p>
+    <div class="dropdown">
+        <select id="api-endpoint-select">
+          <option value="0">Image 1</option>
+          <option value="1">Image 2</option>
+          <option value="2">Image 3</option>
+        </select>
       </div>
-    </div>
-    <div class="container">
-      <!--Display cards-->
-      <ul id="option-2-enhanced-results" class="card-container"></ul>
-    </div>
-  </section>
-  <script src="scripts.js" defer></script>
+    <script src="script.js"></script>
 </body>
-
 </html>

@@ -1,66 +1,49 @@
+/*styles*/
+
+body.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: center;
+    gap: 20px;
   }
 
-  .card {
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
-    max-width: 21.1875rem;
-    flex: 1 0 45%;
+  .card-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
   }
 
-  /* Tablet */
-  @media screen and (min-width: 768px) {
-    .card {
-      flex: 1 0 30%;
-      max-width: 17.625rem;
-    }
+  .card-container img {
+    max-width: 100%; 
+    height: auto;  
+    border-radius: 5px 5px 0 0;
   }
 
-  /* Desktop */
-  @media screen and (min-width: 1024px) {
-    .card {
-      flex: 1 0 20%;
-    }
+  .dropdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
   }
-
-  img {
-    border-bottom: 0.25rem solid #fc0;
-    border-radius: 0.25rem 0.25rem 0 0;
-    height: auto;
-    width: 100%;
-  }
-
-  @media screen and (min-width: 768px) {
-    img {
-      min-height: 15.5rem;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    img {
-      min-height: 16.375rem;
-    }
-  }
-
-  .card-content {
-    padding: 1rem;
-  }
-
-  .header,
-  .subheader {
-    margin: 0;
-  }
-
-  input {
-    border: 2px solid grey;
-    font-size: 1rem;
-    width: 80%;
-    height: 1rem;
-    border-radius: 25px;
-    margin-bottom: 3rem;
-    padding: 1rem;
+  
+  .dropdown select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
   }
